@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smart_library_background"
+    tools:context=".activities.Sign_Up_Page">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Smart Library"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="331dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/background_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <ImageView
+            android:id="@+id/gearOne"
+            android:layout_width="122dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/firstNameModificationPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_book" />
+
+        <EditText
+            android:id="@+id/firstNameModificationPage"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/lastNameModificationPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gearOne" />
+
+        <EditText
+            android:id="@+id/lastNameModificationPage"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/editTextStudentId"
+            app:layout_constraintStart_toStartOf="@+id/firstNameModificationPage"
+            app:layout_constraintTop_toBottomOf="@+id/firstNameModificationPage" />
+
+        <EditText
+            android:id="@+id/editTextStudentId"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:hint="Student Id"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/emailModificationPage"
+            app:layout_constraintStart_toStartOf="@+id/lastNameModificationPage"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameModificationPage" />
+
+        <EditText
+            android:id="@+id/emailModificationPage"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextStudentId"
+            app:layout_constraintTop_toBottomOf="@+id/editTextStudentId" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/editTextConfirmPassword"
+            app:layout_constraintStart_toStartOf="@+id/emailModificationPage"
+            app:layout_constraintTop_toBottomOf="@+id/emailModificationPage" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/checkbox"
+            app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Please read our policy"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/editButtonModificationPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPassword" />
+
+        <Button
+            android:id="@+id/editButtonModificationPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:backgroundTint="#60E19F5E"
+            android:text="Sign up"
+            android:textSize="16sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/progressBarModificationPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox" />
+
+        <ProgressBar
+            android:id="@+id/progressBarModificationPage"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editButtonModificationPage" />
+
+        <ImageView
+            android:id="@+id/imageView_show_hide_confirm_pwd_signUp"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextConfirmPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextConfirmPassword"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextConfirmPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+            app:layout_constraintVertical_bias="0.434" />
+
+        <ImageView
+            android:id="@+id/imageView_show_hide_pwd_signUp"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+            app:layout_constraintTop_toTopOf="@+id/editTextPassword"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "959630935217",
+    "project_id": "smart-library-469fe",
+    "storage_bucket": "smart-library-469fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959630935217:android:d45c6be2bc8aafbac14e90",
+        "android_client_info": {
+          "package_name": "zyh.smartlibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959630935217-6pfrh7tl3dav4v1ejke17uec8cli7au3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx_xlTLsN2HVW9o1xPli7fncO2Pvn8CyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959630935217-6pfrh7tl3dav4v1ejke17uec8cli7au3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

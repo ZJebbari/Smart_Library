@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Smart Library</string>
+    <string name="account">Don\'t have an account? <font color='#5b39c6'>Sign up</font></string>
+    <string name="forgot_password"><u>Reset your password?</u></string>
+    <string name="policy">
+App Membership\nAll users must register on the app in order to borrow books.\n\n
+Borrowing books\n
+The borrowing period is 10 days, starting from the date of borrowing. The user may renew the loan for an additional period if the book is not reserved by another user.
+The book must be borrowed within 10 days from the date of notification. After this time, the reservation will be cancelled.\n\n
+
+Returning books\n
+The user must return the borrowed book before the due date. Books must be in good condition and free of damage. If a book is lost or damaged, the user must replace it or pay the replacement free.
+</string>
+    <string-array name="list">
+        <item>"Select Book Category"</item>
+        <item>"Fantasy"</item>
+        <item>"Science"</item>
+        <item>Romance</item>
+        <item>"Poetry"</item>
+        <item>"Philosophy"</item>
+        <item>"Politics"</item>
+        <item>"Autobiography</item>
+        <item>"Play</item>
+        <item>"Drama"</item>
+        <item>"Fiction"</item>
+        <item>"Magazine"</item>
+        <item>"Novel"</item>
+        <item>"Mathematics"</item>
+        <item>"Humor"</item>
+        <item>"Business"</item>
+        <item>"Travel"</item>
+        <item>"Others"</item>
+    </string-array>
+</resources>

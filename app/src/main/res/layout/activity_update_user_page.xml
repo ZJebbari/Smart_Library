@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smart_library_background"
+    tools:context=".activities.Sign_Up_Page">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Update Profile"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="331dp"
+        android:layout_height="550dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/background_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <ImageView
+            android:id="@+id/gearOne"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/firstNameModificationPage"
+            app:layout_constraintStart_toStartOf="@+id/gearTwo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gear" />
+
+        <ImageView
+            android:id="@+id/gearTwo"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/firstNameModificationPage"
+            app:layout_constraintStart_toStartOf="@+id/firstNameModificationPage"
+            app:layout_constraintTop_toTopOf="@+id/gearOne"
+            app:srcCompat="@drawable/gear" />
+
+        <EditText
+            android:id="@+id/firstNameModificationPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/lastNameModificationPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gearOne" />
+
+        <EditText
+            android:id="@+id/lastNameModificationPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="11dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/emailModificationPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstNameModificationPage" />
+
+        <EditText
+            android:id="@+id/emailModificationPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/passwordModificationPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameModificationPage" />
+
+        <Button
+            android:id="@+id/editButtonModificationPage"
+            android:layout_width="130dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="14dp"
+            android:backgroundTint="#60E19F5E"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/progressBarModificationPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordModificationPage" />
+
+        <ProgressBar
+            android:id="@+id/progressBarModificationPage"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editButtonModificationPage" />
+
+        <EditText
+            android:id="@+id/studentIdModificationPage"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:hint="hey"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/passwordModificationPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="11dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/confirmPasswordModificationPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailModificationPage" />
+
+        <EditText
+            android:id="@+id/confirmPasswordModificationPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="27dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/editButtonModificationPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordModificationPage" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
